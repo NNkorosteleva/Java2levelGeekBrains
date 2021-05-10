@@ -33,7 +33,7 @@ public class ArrayMultithreadingClass {
         });
         t1.start();
         t2.start();
-
+        t1.join();
         t2.join();
 
         System.arraycopy(a1, 0, array, 0, HALF);
